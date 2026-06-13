@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 ShelfSync
 
-## Getting Started
+> A modern, elegant, and simple **personal library tracking system** designed for students and book lovers.
 
-First, run the development server:
+---
+
+## ✨ Overview
+
+**ShelfSync** is a web-based library management system that helps users track, organize, and manage books efficiently.  
+It provides a clean and intuitive interface for monitoring borrowed books, managing members, and keeping a digital record of your personal or school library.
+
+Built with a **modern UI aesthetic (soft pink theme)** and a focus on usability, ShelfSync makes library management feel simple and enjoyable.
+
+---
+
+## 🚀 Features
+
+### 📖 Book Management
+- Add, edit, and delete books
+- Track availability status
+- Organize books by categories
+
+### 👤 Member Management
+- Manage library members
+- Track borrowing history per user
+
+### 📦 Borrowing System
+- Borrow and return books
+- Real-time status updates
+- Prevent double borrowing
+
+### 📊 Dashboard Overview
+- Total books, borrowed books, and users
+- Quick insights into library activity
+
+### 🎨 Modern UI
+- Soft pink aesthetic design
+- Responsive layout (mobile + desktop)
+- Smooth and clean user experience
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Backend/Auth:** Supabase
+- **Database:** PostgreSQL (via Supabase)
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/shelfsync.git
+cd shelfsync
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Set up environment variables:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Authentication
 
-To learn more about Next.js, take a look at the following resources:
+ShelfSync uses **Supabase Auth** for:
+- Email login
+- Session management
+- Secure logout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+/app
+  /dashboard
+  /books
+  /borrowed-books
+  /members
+  /login
+  /signup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/components
+  Sidebar.tsx
+  Navbar.tsx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+/utils
+  supabase/
+```
+
+---
+
+## 🌸 UI Philosophy
+
+ShelfSync is designed with:
+
+- Soft pastel pink tones 🎀
+- Glassmorphism effects ✨
+- Clean typography 📖
+- Minimal cognitive load 🧠
+- Student-friendly UX 🎓
+
+---
+
+## 📌 Future Improvements
+
+- Dark mode (pink neon theme 🌙)
+- Book barcode scanner 📷
+- AI-based book recommendations 🤖
+- Email reminders for due books 📧
+- Export library reports (PDF/Excel)
+
+---
+
+## 🤝 Contributing
+
+1. Fork the project  
+2. Create feature branch  
+3. Commit changes  
+4. Push branch  
+5. Open Pull Request  
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio use.
+
+---
+
+## 💗 Author
+
+ShelfSync Developer  
+Built with Next.js + Supabase  
+Designed with a soft pink modern UI aesthetic
